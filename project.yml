@@ -1,0 +1,26 @@
+name: CarPlayGPSMonitor
+options:
+  bundleIdPrefix: com.example
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    IPHONEOS_DEPLOYMENT_TARGET: '16.0'
+    TARGETED_DEVICE_FAMILY: '1'
+targets:
+  CarPlayGPSMonitor:
+    type: application
+    platform: iOS
+    deploymentTarget: '16.0'
+    sources:
+      - App
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.carplaygpsmonitor
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: 'GPS来源检测'
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: '检测CarPlay连接期间的定位来源并导出测试记录。'
+        INFOPLIST_KEY_UIRequiresFullScreen: NO
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_ALLOWED: NO
+        SUPPORTS_MACCATALYST: NO
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: NO
